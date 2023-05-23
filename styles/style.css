@@ -56,3 +56,138 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: var(--color4);
 }
+
+/* ---- HEADER ---- */
+
+header {
+    grid-row: 1 / 2; /* define o cabeçalho para ocupar a primeira linha */
+    height: 60px;
+}
+
+/* -- Menu -- */
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color2);
+}
+
+/* Buttons */
+
+.material-symbols-rounded {
+    color: var(--color4);
+    font-size: 2.5em; 
+    right: 25px;
+    top: 0px;
+    margin: 10px auto;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.material-symbols-rounded:hover {
+    cursor: pointer;
+}
+
+#burger {
+    position: fixed;
+    margin-left: auto;
+    transition: all 0.2s ease-out;  
+}
+
+#burger:hover, #closemenu:hover {
+    font-size: 2.6em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-out;
+}
+
+#closemenu { 
+    position: absolute;
+    z-index: 10;
+    animation: girar2 0.3s linear;  
+}
+
+/* Menu List */
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;    
+    text-align: left; 
+    z-index: 9;
+    transition: all 0.5s ease;   
+}
+
+#menu.open {
+    top: 0;
+    max-height: 500px;    
+    overflow-y: scroll;
+    transition: all 1s ease;
+}
+
+#menu.close {
+    top: 0;
+    max-height: 0;
+}
+
+#menu::-webkit-scrollbar {
+    width: 0em;
+    background-color: transparent;
+}
+
+#menu ul{
+    list-style: none;
+    padding: 30px;
+    background-color: var(--color2);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#menu li{  
+    padding: 15px 0;
+}
+
+.menu-list a {
+    color: var(--color4);
+    text-decoration: none;
+    font-size: 1.8em;  
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* underline menu */
+
+.menu-list a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--color4);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+  
+.menu-list a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ---- MAIN ---- */
+
+main {
+    grid-row: 2 / 3; 
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    grid-row: 3 / 4; 
+}

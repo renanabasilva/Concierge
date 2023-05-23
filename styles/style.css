@@ -28,8 +28,8 @@ body, html {
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr auto; /* define três linhas - cabeçalho, corpo e rodapé */
-    min-height: 100vh; /* define a altura mínima do corpo da página como a altura total da viewport */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh; 
     overflow-x: hidden;
     height: 100vh;
 }
@@ -60,7 +60,7 @@ body {
 /* ---- HEADER ---- */
 
 header {
-    grid-row: 1 / 2; /* define o cabeçalho para ocupar a primeira linha */
+    grid-row: 1 / 2; 
     height: 60px;
 }
 
@@ -83,7 +83,6 @@ header {
     right: 25px;
     top: 0px;
     margin: 10px auto;
-    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .material-symbols-rounded:hover {
@@ -184,6 +183,32 @@ header {
 
 main {
     grid-row: 2 / 3; 
+}
+
+.title {
+    padding: 20px 50px;
+    background-color: var(--color3);
+    color: var(--color5);
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.white {
+    background-color: var(--color0);
+}
+
+.title h1, .title h2 {
+    margin: 10px;
+    font-family: var(--font0);
+    font-weight: 400;
+}
+
+.line {    
+    height: 1px;
+    background-color: var(--color5);
+    margin: 0px auto;
+    width: 100%;
 }
 
 /* ---- FOOTER ---- */

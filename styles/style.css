@@ -324,10 +324,10 @@ div.buttons a img {
 }
 
 .section-head p {
-    padding: 0 50px;
+    padding: 0 30px;
     /* padding-bottom: 20px; */
     color: var(--color5);
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 1.2em;
 }
 
@@ -350,7 +350,7 @@ div.buttons a img {
     padding: 50px 40px;
     background-color: var(--color0);
     color: var(--color4);
-    font-size: 1.9em;
+    font-size: 2em;
     line-height: 1.4em;
 }
 
@@ -412,7 +412,7 @@ div.buttons a img {
 }
 
 .box-discover p {
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.2em;
     color: var(--color4);
 }

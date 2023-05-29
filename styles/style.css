@@ -207,7 +207,7 @@ section {
     text-transform: uppercase;
 }
 
-.white {
+div.white {
     background-color: var(--color0);
 }
 
@@ -300,13 +300,13 @@ div.buttons a{
 
 .service-section {
     background-color: var(--color2);
-    padding: 10px 30px;
+    padding: 50px 30px;
     padding-bottom: 50px;
 }
 
 .section-head p {
     padding: 0 50px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     color: var(--color5);
     font-size: 1.5em;
     line-height: 1.2em;
@@ -377,6 +377,30 @@ div.buttons a{
     height: 100%;
     width: 22px;
 }
+
+/* Saiba Mais */
+
+.box-discover {
+    padding: 40px;
+    background-color: var(--color2);
+}
+
+.box-discover h3 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--color5);
+}
+
+.box-discover p {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    color: var(--color4);
+}
+
+/* Contato */
+
+
 
 /* ---- FOOTER ---- */
 

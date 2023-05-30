@@ -64,6 +64,8 @@ body {
 header {
     grid-row: 1 / 2; 
     height: 59px;
+    position: relative;
+    z-index: 9;
 }
 
 /* -- Menu -- */
@@ -208,6 +210,11 @@ section {
     text-transform: uppercase;
 }
 
+.home-section > div.title {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
 div.white {
     background-color: var(--color0);
 }
@@ -227,7 +234,7 @@ div.white {
 
 .description {
     padding: 30px 30px;
-    padding-top: 60px;
+    padding-top: 20px;
     color: var(--color5);
 }
 
@@ -237,20 +244,22 @@ div.white {
 }
 
 .description p {
-    padding: 30px;
+    padding: 20px 30px;
     font-size: 1.3em;
     line-height: 1.2em;
 }
 
 p.highlight {
+    padding: 0;
     color: var(--color4);
     font-weight: bold;
-    padding: 10px;    
+    font-size: 1.4em;
+    line-height: 1.4em;
 }
 
 .highlight svg {
-    /* transform-origin: 100% 0;
-    transform: scale(1.3); */
+    transform-origin: 100% 0;
+    transform: scale(1.3);
 }
 
 .home-photo {

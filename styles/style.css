@@ -233,8 +233,8 @@ div.white {
 }
 
 .description {
-    padding: 30px 30px;
-    padding-top: 20px;
+    padding: 20px 30px;
+    /* padding-top: 20px; */
     color: var(--color5);
 }
 

@@ -94,6 +94,20 @@ Extra large devices (large laptops and desktops, 1200px and up)
         padding: 0 10px;
     }
 
+    .image-footer {
+        height: 30vw;
+        max-height: 450px;
+        width: 100%;
+        background-image: url(../images/dina-footer-bg-min.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    footer > img {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -254,13 +268,5 @@ Extra large devices (large laptops and desktops, 1200px and up)
         display: flex;
         justify-content: center;
         padding-bottom: 40px;
-    }
-
-    /* Footer */
-
-    footer .img-footer {
-        width: 100vw;
-        height: 500px;
-        background-image: url(../images/dina-footer-min.png);
     }
 }

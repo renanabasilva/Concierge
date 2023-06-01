@@ -33,7 +33,6 @@ body {
     min-height: 100vh; 
     overflow-x: hidden;
     height: 100vh;
-    width: 100vw;
 }
 
 /* scrollbar */
@@ -265,6 +264,7 @@ p.highlight {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../images/Concierge_Senior_Foto_Mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 30vh;
 }
 
@@ -330,7 +330,8 @@ div.buttons a img {
 
 .service-section {
     background-color: var(--color2);
-    padding: 10px 30px;
+    padding: 0px 30px;
+    padding-top: 55px;
     padding-bottom: 50px;
 }
 
@@ -343,8 +344,13 @@ div.buttons a img {
 }
 
 .box-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     margin: 40px 0;
+    height: 100px;
+    text-align: center;
     background-color: var(--color3);
     color: var(--color0);
     font-size: 2em;
@@ -361,6 +367,7 @@ div.buttons a img {
 }
 
 .box-content p {
+    height: calc();
     margin-top: -4px;
     padding: 50px 40px;
     background-color: var(--color0);
@@ -373,6 +380,10 @@ div.buttons a img {
 
 .about-section img {
     width: 100%;    
+}
+
+#dina2 {
+    display: none;
 }
 
 .box-about {
@@ -395,7 +406,7 @@ div.buttons a img {
 
 .requirements {    
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 0 40px;
     text-align: center;
     justify-content: center;
@@ -404,7 +415,7 @@ div.buttons a img {
 
 .requirements p {
     display: inline-block;
-    width: 80%;
+    /* width: 80%; */
     padding: 13px 20px;
     font-weight: bold;
     font-size: 1.2em;    

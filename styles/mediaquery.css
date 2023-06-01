@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+
+/* Typical Device Breakpoints 
+-------------------------------------------------
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+
+/* Medium Devices */
+
+
+@media screen and (min-width: 768px) {
+
+    header {
+        height: 60px;
+    }
+
+    .top {
+        height: 0px;
+    }
+    
+    .material-symbols-rounded {
+        display: none;
+    }
+
+    #menu {
+        max-height: 100%;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 7px;
+        margin-bottom: -5px;
+        border-radius: 0 0 0 0;
+    }
+
+    #menu ul li a {
+        display: inline;      
+        font-size: 1.5em;  
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .home-section {
+        padding: 30px 0;
+    }
+
+    .maintitle {
+        background-color: transparent;
+        padding: 20px 50px;
+        padding-bottom: 40px;
+        font-size: 2.5em;
+    }
+
+    .boxes-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .box-service {
+        display: inline-block;
+        max-width: 700px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #menu ul::after {
+        content: '(14) 9-9632-8422';
+        color: var(--color4);
+        font-size: 1.5em;  
+    }
+
+    .maintitle {
+        font-size: 3em;
+    }
+
+    .home-background {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../images/Concierge_Senior_Foto_Mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 70vw;
+        max-height: 800px;
+        /* max-width: 1800px; */
+        margin: 0 auto;
+    }
+
+    .home-photo {
+        background-image: none;
+        height: fit-content;
+    }
+
+    .box-home {
+        float: right;
+        width: 50vw;
+        min-width: 550px;
+        max-width: 900px;
+        margin-top: 7vw;
+        padding-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.651);
+        
+    }
+
+    .description {
+        padding-top: 40px;
+    }
+
+    /* Services */
+
+    .services-short {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        margin: 0 auto;
+        max-width: 1800px;
+    }
+
+    .boxes-section {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        height: 800px;
+    }
+    
+    .box-service {
+        width: 28vw;
+        max-width: 400px;
+        min-width: 277px;
+        height: 800px;
+    }
+
+
+    .box-content p {
+        display: flex;
+        align-items: center;
+        min-height: 323px;
+    }
+
+    .service-section {
+        padding-bottom: 100px;
+    }
+
+    /* About */
+
+    #dina {
+        display: none;
+    }
+
+    .box-about {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        width: 50vw;
+        max-width: 600px;
+    }
+
+    .about-image {
+        background-image: url(../images/dina-min.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50vw;
+        max-width: 870px;
+        height: 600px;
+    }
+
+    /* Discover */
+
+    
+}

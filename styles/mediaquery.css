@@ -157,6 +157,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
         
     }
 
+    .line {    
+        height: 1px;
+        background-color: var(--color5);
+        margin: 0px auto;
+        width: 80vw;
+        max-width: 1400px;
+    }
+
     .description {
         padding-top: 40px;
     }

@@ -83,7 +83,16 @@ Extra large devices (large laptops and desktops, 1200px and up)
         max-width: 700px;
     }
 
+    /* Footer */
 
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact p {
+        display: inline-block;
+        padding: 0 10px;
+    }
 
 }
 
@@ -93,6 +102,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
         content: '(14) 9-9632-8422';
         color: var(--color4);
         font-size: 1.5em;  
+    }
+
+    .service-section,
+    .about-section,
+    .discover-section,
+    .contact-section {
+        padding-top: 50px;
+        margin-bottom: -50px;
     }
 
     .maintitle {
@@ -197,5 +214,53 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
     /* Discover */
 
-    
+    .discover-section {
+        background-color: var(--color2);
+    }
+
+    .discover-section .title h2 {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .boxes-discover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1000px;        
+    }
+
+    .box-discover {
+        width: 50%;
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .box-discover p {
+        display: flex;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .boxes-discover .white {
+        background-color: var(--color2);
+    }
+
+    /* Contact */
+
+    .buttons-group {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    /* Footer */
+
+    footer .img-footer {
+        width: 100vw;
+        height: 500px;
+        background-image: url(../images/dina-footer-min.png);
+    }
 }

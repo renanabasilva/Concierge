@@ -267,6 +267,7 @@ p.highlight {
     background-repeat: no-repeat;
     background-position: center center;
     height: 30vh;
+    min-height: 250px;
 }
 
 div.buttons {

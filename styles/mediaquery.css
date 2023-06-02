@@ -21,6 +21,13 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* Medium Devices */
 
+@media screen and (orientation: landscape) {            
+
+    .home-photo {
+        /* min-height: 300px; */
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -68,6 +75,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
         padding: 20px 50px;
         padding-bottom: 40px;
         font-size: 2.5em;
+    }
+
+    .home-photo {
+        min-height: 300px;
     }
 
     .boxes-section {
@@ -144,6 +155,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     .home-photo {
         background-image: none;
         height: fit-content;
+        min-height: fit-content;
     }
 
     .box-home {

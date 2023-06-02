@@ -21,14 +21,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* Medium Devices */
 
-@media screen and (orientation: landscape) {            
-
-    .home-photo {
-        /* min-height: 300px; */
-    }
-}
-
-
 @media screen and (min-width: 768px) {
 
     header {
@@ -147,7 +139,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
         background-repeat: no-repeat;
         background-position: center center;
         height: 70vw;
-        max-height: 800px;
+        max-height: 650px;
         /* max-width: 1800px; */
         margin: 0 auto;
     }
@@ -163,7 +155,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
         width: 50vw;
         min-width: 550px;
         max-width: 900px;
-        margin-top: 7vw;
+        margin-top: 4vw;
         padding-bottom: 40px;
         background-color: rgba(255, 255, 255, 0.651);
         
